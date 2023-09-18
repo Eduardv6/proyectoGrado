@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/registrarcaso.css">
+    <title>Registrar Casos</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-head">
+            <div class="title">
+                <h1>FUERZA ESPECIAL DE LUCHA CONTRA EL CRIMEN</h1>
+            </div>
+            <div>
+                <button class="btn-red" id="exit-session" type="button">Cerrar Sesión</button>
+            </div>
+            
+        </div>
+        <div class="botones">
+            <div><button ><a href="registrarcaso.html">Registrar Caso</a> </button></div>
+            <div><button><a href="casosactivos.html">Casos Activos</a></button></div>
+            <div><button><a href="casosfinalizados.html">Casos Finalizados</a></button></div>
+            <div><button><a href="reportes.html">Reportes</a></button></div>
+        </div>
+        <form>
+            <div class="form-container">
+                <div>
+                    <label for="nombre_autor">Nombre del Autor</label>
+                    <input id="nombre_autor" type="text">
+                </div>
+                <div class="err-msg" id="validation-nombreautor">
+                    Debe ingresar el Nombre del Autor
+                </div>
+    
+                <div>
+                    <label for="edad_autor">Edad del Autor</label>
+                    <input id="edad_autor" type="number">
+                </div>
+                <div class="err-msg" id="validation-edadautor">
+                    Debe ingresar la Edad del Autor
+                </div>
+    
+                <div>
+                    <label for="sexo_autor">Sexo del Autor</label>
+                    <input id="sexo_autor" type="text">
+                </div>
+                <div class="err-msg" id="validation-sexoautor">
+                    Debe ingresar el Sexo del Autor
+                </div>
+    
+                <div>
+                    <label for="nacionalidad_a">Nacionalidad</label>
+                    <input id="nacionalidad_a" type="text">
+                </div>
+                <div class="err-msg" id="validation-nacionalidada">
+                    Debe ingresar la Nacionalidad del Autor
+                </div>
+    
+                <div>
+                    <label for="temperancia_a">Temperancia de la Víctima</label>
+                    <input id="temperancia_a" type="text">
+                </div>
+                <div class="err-msg" id="validation-temperanciaa">
+                    Debe ingresar La Temperancia del Autor
+                </div>
+    
+                <div>
+                    <label for="caso_id">Número de Caso</label>
+                    <input id="caso_id" type="number">
+                </div>
+                <div class="err-msg" id="validation-caso_id">
+                    Debe ingresar el Número de Caso
+                </div>
+    
+                <div class="botones-regis">
+                    <div>
+                        <button class="back-btn" >
+                            <a href="delitos.html">Atras</a>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="regis-btn" type="button" id="btn-regis">
+                            Registrar
+                        </button>
+                    </div>
+                    <div>
+                        <button class="next-btn" >
+                            <a href="georeferencia.html">Siguiente</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <script src="js/utils.js"></script>
+        <script src="js/involucrados.js"></script>
+    </div>
+</body>
+</html>

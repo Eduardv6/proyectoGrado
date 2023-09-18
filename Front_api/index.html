@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/body.css">
+    <title>Sistema Web</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-head">
+            <div class="title">
+                <h1>FUERZA ESPECIAL DE LUCHA CONTRA EL CRIMEN</h1>
+            </div>
+            <div>
+                <button class="btn-red">Iniciar Sesión</button>
+            </div>
+            
+        </div>
+        <div class="division">
+            <h2>"DIVISIÓN DE HOMICIDIOS"</h2>
+        </div>
+        <div class="bodylogin">
+            <h2>Login</h2>
+
+            <form class="login-form">
+
+                <input type="text" id="inputEmail"  placeholder="Correo Electronico" >
+                <br>
+                <div class="err-msg" id="validation-email" style="display: none;">
+                    Debe ingresar su Email
+                </div>
+
+                <input type="password" id="inputPassword"  placeholder="Contraseña" >
+                <br>
+                <div class="err-msg" id="validation-password" style="display: none;">
+                    Debe ingresar su Password
+                </div>
+                <div class="alert" id="msg-error-login" style="display: none" role="alert"></div>
+            
+                <button type="button" id="btn-login">Login</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/utils.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

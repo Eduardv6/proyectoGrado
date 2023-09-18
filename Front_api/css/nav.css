@@ -1,0 +1,42 @@
+.nav-head{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: #15803d;
+}
+.btn-red{
+    background-color: red;
+    color: white;
+    height: 45px;
+    width: 129px;
+    margin-top: 18px;
+    margin-right: 70px;
+    font-size: 17px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.btn-green{
+    background-color: green;
+    color: white;
+    height: 45px;
+    width: 129px;
+    margin-top: 18px;
+    margin-right: 70px;
+    font-size: 17px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.title{
+    margin-left: 10px;
+}
+.atras button{
+    background-color: #15803d;
+    color: white;
+    height: 45px;
+    width: 129px;
+    margin-top: 18px;
+    margin-right: 70px;
+    font-size: 17px;
+    border-radius: 10px;
+    font-weight: bold;
+}

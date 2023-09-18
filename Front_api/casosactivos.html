@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/tablas.css">
+    <title>Casos Activos</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-head">
+            <div class="title">
+                <h1>FUERZA ESPECIAL DE LUCHA CONTRA EL CRIMEN</h1>
+            </div>
+            <div>
+                <button class="btn-red" id="exit-session" type="button">Cerrar Sesión</button>
+            </div>
+            
+        </div>
+        <div class="botones">
+            <div><button ><a href="registrarcaso.html">Registrar Caso</a> </button></div>
+            <div><button><a href="casosactivos.html">Casos Activos</a></button></div>
+            <div><button><a href="casosfinalizados.html">Casos Finalizados</a></button></div>
+            <div><button><a href="reportes.html">Reportes</a></button></div>
+        </div>
+
+        <div class="form-container" id="contenedor-casos">
+            <div id="contenido-casos" class="casos">
+                <table>
+                    <thead>
+                        <th>    
+                            <td><strong></strong></td>
+                            <td><strong>ID</strong></td>
+                            <td><strong>Tipo de Caso</strong></td>
+                            <td><strong>Fecha</strong></td>
+                            <td><strong>Hora</strong></td>
+                            <td><strong>Nombre Victima</strong></td>
+                            <td><strong>Investigador</strong></td>
+                            <td><strong>Imagen</strong></td>
+                            <td><strong>Estado</strong></td>
+                            <td><strong></strong></td>
+                            
+                            
+                        </th>
+                    </thead>
+                    <tbody id="tableBody">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/utils.js"></script>
+    <script src="js/casosActivos.js"></script>
+</body>
+</html>

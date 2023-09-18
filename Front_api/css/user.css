@@ -1,0 +1,57 @@
+.register button{
+    background-color: #15803d;
+    color: white;
+    height: 45px;
+    width: 129px;
+    margin-top: 18px;
+    margin-left: 90%;
+    font-size: 17px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.user-list {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los elementos de la lista */
+.user-list ul {
+    list-style: none;
+}
+
+.user-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+/* Estilos para los botones de editar y eliminar */
+.btn-container {
+    display: flex;
+    gap: 10px;
+}
+
+.edit-btn,
+.delete-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}

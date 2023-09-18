@@ -1,0 +1,69 @@
+
+.division{
+    color: white;
+    margin-left: 40%;
+    margin-top: 100px;
+    margin-bottom: 0px;
+
+}
+.bodylogin{
+    display: block;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin-top: 7%;
+    margin-left: 35%;
+    justify-content: center;
+    width: 475px;
+    border: 2px;
+    border-color: #767370;
+    border-style: solid;
+}
+
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para los campos de entrada */
+.login-form label {
+    margin-bottom: 5px;
+}
+
+.login-form input {
+    width: 100%;
+    background-color: #e5e7eb;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.login-form select {
+    width: 105%;
+    background-color: #e5e7eb;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Estilos para el botón de envío */
+.login-form button {
+    background-color: #15803d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 500px;
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+}

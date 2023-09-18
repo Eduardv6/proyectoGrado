@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/user.css">
+    <link rel="stylesheet" href="css/tablas.css">
+    <title>Administración de Usuarios</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-head">
+            <div class="title">
+                <h1>FUERZA ESPECIAL DE LUCHA CONTRA EL CRIMEN</h1>
+            </div>
+            <div>
+                <button class="btn-red" id="exit-session" type="button">Cerrar Sesión</button>
+            </div>
+            
+        </div>
+        <div class="botones">
+            <div><button ><a href="registrarcaso.html">Registrar Caso</a> </button></div>
+            <div><button><a href="casosactivos.html">Casos Activos</a></button></div>
+            <div><button><a href="casosfinalizados.html">Casos Finalizados</a></button></div>
+            <div><button><a href="reportes.html">Reportes</a></button></div>
+        </div>
+    </div>
+    <div class="atras">
+        <button><a href="home.html">Regresar</a></button>
+    </div>
+    <div class="register">
+        <button><a href="UserRegister.html">Registrar Usuario</a></button>
+    </div>
+    <div class="form-container" id="contenedor-casos">
+        <div id="contenido-casos" class="casos">
+            <table>
+                <thead>
+                    <th>
+                        <td><strong>N°</strong></td>
+                        <td><strong>Nombre</strong></td>
+                        <td><strong>Email</strong></td>
+                        <td><strong>Grado</strong></td>
+                        <td><strong>Rol</strong></td>
+                        <td><strong></strong></td>
+                    </th>
+                </thead>
+                <tbody id="tableBody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/utils.js"></script>
+    <script src="js/listUsuarios.js"></script>
+    
+</body>
+</html>

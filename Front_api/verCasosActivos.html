@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/tablas.css">
+    <link rel="stylesheet" href="css/vercasos.css">
+    <title>Casos Activos</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-head">
+            <div class="title">
+                <h1>FUERZA ESPECIAL DE LUCHA CONTRA EL CRIMEN</h1>
+            </div>
+            <div>
+                <button class="btn-red" id="exit-session" type="button">Cerrar Sesión</button>
+            </div>
+            
+        </div>
+        <div class="botones">
+            <div><button ><a href="registrarcaso.html">Registrar Caso</a> </button></div>
+            <div><button><a href="casosactivos.html">Casos Activos</a></button></div>
+            <div><button><a href="casosfinalizados.html">Casos Finalizados</a></button></div>
+            <div><button><a href="reportes.html">Reportes</a></button></div>
+        </div>
+        
+        <div class="productoCompleto">
+            
+            <div class="informacionProducto" id="genPru">
+                <h1 id="idCasoC" class="styleid"></h1>
+                <div id="tipoCasoC" class="styletipoCaso"> </div>
+                <div id="nombreVictimaC" class="stylenombreVictima"></div>
+                <div id="sexoVictimaC" class="stylesexoVictima"> </div>
+                <div id="edadVictimaC" class="styleedadVictima"> </div>
+                <div id="nacionalidadVictimaC" class="stylenacionalidadVic"> </div>
+                <div id="temperanciaVictimaC" class="styletemperanciaVic"> </div>
+                <div id="delitoC" class="styledelito"> </div>
+                <div id="fechaC" class="stylefecha"> </div>
+                <div id="horaC" class="stylehora"> </div>
+                <div id="objetosRobadoC" class="styleobjetosrobados"> </div>
+                <div id="instrumentosC" class="styleinstrumentos"> </div>
+                <div id="mediosC" class="stylemedios"> </div>
+                <div id="nombreAutorC" class="stylenombreAutor"> </div>
+                <div id="sexoAutorC" class="stylesexoAutor"> </div>
+                <div id="edadAutorC" class="styleedadAutor"> </div>
+                <div id="nacionalidadAutorC" class="stylenacionalidadAutor"> </div>
+                <div id="temperanciaAutorC" class="styletemperanciaAutor"> </div>
+                <div id="departamentoC" class="styledepartamento"> </div>
+                <div id="provinciaC" class="styleprovincia"> </div>
+                <div id="municipioC" class="stylemunicipio"> </div>
+                <div id="comunidadC" class="stylecomunidad"> </div>
+                <div id="zonaC" class="stylezona"> </div>
+                <div id="InvestigadorC" class="styleinvestigador"> </div>
+                <div id="gradoC" class="stylegrado"> </div>
+                <div id="fileNameC" class="stylefileName"> </div>
+
+            </div>
+        </div>
+        <div>
+            <input 
+                class=" btn btn-generar-pdf" 
+                type="submit" 
+                id="btn-generar" 
+                value="Generar PDF"
+                onclick="generarPDF(event)">           
+        </div>
+
+    </div>
+    
+    <script src="js/utils.js"></script>
+    <script src="js/verCasosActivos.js"></script>
+    <script src = " https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js "> </script>
+</body>
+</html>

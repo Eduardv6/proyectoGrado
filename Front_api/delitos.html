@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/registrarcaso.css">
+    <title>Registrar Casos</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-head">
+            <div class="title">
+                <h1>FUERZA ESPECIAL DE LUCHA CONTRA EL CRIMEN</h1>
+            </div>
+            <div>
+                <button class="btn-red" id="exit-session" type="button">Cerrar Sesión</button>
+            </div>
+            
+        </div>
+        <div class="botones">
+            <div><button ><a href="registrarcaso.html">Registrar Caso</a> </button></div>
+            <div><button><a href="casosactivos.html">Casos Activos</a></button></div>
+            <div><button><a href="casosfinalizados.html">Casos Finalizados</a></button></div>
+            <div><button><a href="reportes.html">Reportes</a></button></div>
+        </div>
+        <form>
+            <div class="form-container">
+                <div>
+                    <label for="delito">Delito</label>
+                    <input id="delito" type="text">
+                </div>
+                <div class="err-msg" id="validation-delito">
+                    Debe ingresar el Delito
+                </div>
+    
+                <div>
+                    <label for="fecha">Fecha</label>
+                    <input id="fecha" type="date">
+                </div>
+                <div class="err-msg" id="validation-fecha">
+                    Debe ingresar la Fecha
+                </div>
+    
+                <div>
+                    <label for="hora">Hora</label>
+                    <input id="hora" type="text">
+                </div>
+                <div class="err-msg" id="validation-hora">
+                    Debe ingresar la Hora
+                </div>
+    
+                <div>
+                    <label for="objetos_robados">Objetos Robados</label>
+                    <input id="objetos_robados" type="text">
+                </div>
+                <div class="err-msg" id="validation-objetosrobados">
+                    Debe ingresar el Objeto Robado
+                </div>
+    
+                <div>
+                    <label for="instrumentos_utlizados">Instrumentos Utilizados</label>
+                    <input id="instrumentos_utlizados" type="text">
+                </div>
+                <div class="err-msg" id="validation-instrumentosutlizados">
+                    Debe ingresar el Instrumento Utilizado
+                </div>
+    
+                <div>
+                    <label for="caso_id">Número de Caso</label>
+                    <input id="caso_id" type="number">
+                </div>
+                <div class="err-msg" id="validation-casoid">
+                    Debe ingresar el Número de Caso
+                </div>
+    
+                <div>
+                    <label for="medios_utlizados">Medios Utilizados</label>
+                    <input id="medios_utlizados" type="text">
+                </div>
+                <div class="err-msg" id="validation-mediosutlizados">
+                    Debe ingresar los Medios Utilizados
+                </div>
+    
+                <div class="botones-regis">
+                    <div>
+                        <button class="back-btn" >
+                            <a href="registrarcaso.html">Atras</a>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="regis-btn" type="button" id="btn-regis">
+                            Registrar
+                        </button>
+                    </div>
+                    <div>
+                        <button class="next-btn" >
+                            <a href="involucrados.html">Siguiente</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <script src="js/utils.js"></script>
+        <script src="js/delitos.js"></script>
+    </div>
+</body>
+</html>

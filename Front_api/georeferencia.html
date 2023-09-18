@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/registrarcaso.css">
+    <title>Registrar Casos</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-head">
+            <div class="title">
+                <h1>FUERZA ESPECIAL DE LUCHA CONTRA EL CRIMEN</h1>
+            </div>
+            <div>
+                <button class="btn-red" id="exit-session" type="button">Cerrar Sesión</button>
+            </div>
+            
+        </div>
+        <div class="botones">
+            <div><button ><a href="registrarcaso.html">Registrar Caso</a> </button></div>
+            <div><button><a href="casosactivos.html">Casos Activos</a></button></div>
+            <div><button><a href="casosfinalizados.html">Casos Finalizados</a></button></div>
+            <div><button><a href="reportes.html">Reportes</a></button></div>
+        </div>
+        <form>
+            <div class="form-container">
+                <div>
+                    <label for="departamento">Departamento</label>
+                    <input id="departamento" type="text">
+                </div>
+                <div class="err-msg" id="validation-departamento">
+                    Debe ingresar el Departamento
+                </div>
+    
+                <div>
+                    <label for="provincia">Provincia</label>
+                    <input id="provincia" type="text">
+                </div>
+                <div class="err-msg" id="validation-provincia">
+                    Debe ingresar la Provincia
+                </div>
+    
+                <div>
+                    <label for="municipio">Municipio</label>
+                    <input id="municipio" type="text">
+                </div>
+                <div class="err-msg" id="validation-municipio">
+                    Debe ingresar el Municipio
+                </div>
+    
+                <div>
+                    <label for="comunidad">Comunidad</label>
+                    <input id="comunidad" type="text">
+                </div>
+                <div class="err-msg" id="validation-comunidad">
+                    Debe ingresar la Comunidad
+                </div>
+    
+                <div>
+                    <label for="caso_id">Número de Caso</label>
+                    <input id="caso_id" type="number">
+                </div>
+                <div class="err-msg" id="validation-caso_id">
+                    Debe ingresar el Número de Caso
+                </div>
+    
+                <div>
+                    <label for="zona">Zona</label>
+                    <input id="zona" type="text">
+                </div>
+                <div class="err-msg" id="validation-zona">
+                    Debe ingresar la Zona
+                </div>
+    
+                <div class="botones-regis">
+                    <div>
+                        <button class="back-btn" >
+                            <a href="registrarcaso.html">Atras</a>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="regis-btn" type="button" id="btn-regis">
+                            Registrar
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+        </form>
+        <script src="js/utils.js"></script>
+        <script src="js/georeferencia.js"></script>
+    </div>
+</body>
+</html>

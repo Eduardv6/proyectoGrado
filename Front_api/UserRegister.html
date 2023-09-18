@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/registrarcaso.css">
+    <title>Sistema Web</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-head">
+            <div class="title">
+                <h1>FUERZA ESPECIAL DE LUCHA CONTRA EL CRIMEN</h1>
+                
+            </div>
+            <h1 class="titulo" id="titulo-pg"></h1>
+            <div>
+                <button class="btn-red" id="exit-session" type="button">Cerrar Sesión</button>
+            </div>
+        </div>
+        <div>
+            <button class="backbtn" >
+                <a href="ListaUsuarios.html">Atras</a>
+            </button>
+        </div>
+        <div class="division">
+            <h2>"DIVISIÓN DE HOMICIDIOS"</h2>
+
+            
+        </div>
+        <div class="bodylogin">
+            <h2>Registrar Usuario</h2>
+
+            
+            <form class="login-form">
+                <input type="hidden" id="usuarioId" value="0">
+                <input type="text" id="name"  placeholder="Nombre Completo" >
+                <br>
+                <div class="err-msg" id="validation-nombre">
+                    Debe ingresar su Nombre
+                </div>
+
+                <input type="text" id="email"  placeholder="Correo Electronico" >
+                <br>
+                <div class="err-msg" id="validation-email">
+                    Debe ingresar su Email
+                </div>
+
+                <input type="password" id="password"  placeholder="Contraseña" >
+                <br>
+                <div class="err-msg" id="validation-password">
+                    Debe ingresar una Contraseña
+                </div>
+
+                <input type="password" id="secondPassword" placeholder=" Confirmar Contraseña" >
+                <br>
+                <div class="err-msg" id="validation-secondPassword">
+                    Debe ingresar validar su Contraseña
+                </div>
+
+                <select name="grado" id="inputGrado">
+                    <option value="Sargento">
+                        Sargento
+                    </option>
+                    <option value="Sargento Segundo">
+                        Sargento Segundo
+                    </option>
+                    <option value="Sargento Primero">
+                        Sargento Primero
+                    </option>
+                    <option value="Sargento Mayor">
+                        Sargento Mayor
+                    </option>
+                    <option value="Suboficial Segundo">
+                        Suboficial Segundo
+                    </option>
+                    <option value="Suboficial Primero">
+                        Suboficial Primero
+                    </option>
+                    <option value="Suboficial Mayor">
+                        Suboficial Mayor
+                    </option>
+                    <option value="Suboficial Superior">
+                        Suboficial Superior
+                    </option>
+                </select>
+                <br>
+                <div class="err-msg" id="validation-grado">
+                    Debe ingresar validar su Contraseña
+                </div>
+
+                
+                <select name="rol" id="inputRol">
+                    <option value="Administrador">
+                        Administrador
+                    </option>
+                    <option value="Investigador">
+                        Investigador
+                    </option>
+                </select>
+                <br>
+                <div class="err-msg" id="validation-rol">
+                    Debe ingresar un Rol
+                </div>
+
+                <button type="button" id="btn-regis">Registrar</button>
+            </form>
+        </div>
+    </div>
+    <script src="js/utils.js"></script>
+    <script src="js/registrarUsers.js"></script>
+</body>
+</html>
